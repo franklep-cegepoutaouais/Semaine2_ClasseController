@@ -1,0 +1,25 @@
+﻿@model WebApplication1.Models.AjouterEmploye
+@{
+    ViewBag.Title = "Formulaire d'ajout de personnel";
+}
+@Html.BeginForm("Inscrire", "Formulaire", FormMethod.Post)
+{
+<fieldset>
+    <p>
+        <div>Nom de l'employé :</div>
+        @Html.TextBoxFor(k => k.Nom)
+    </p>
+
+    <p>
+        <div>Prénom de l'employé :</div>
+        @Html.TextBoxFor(k => k.Prenom)
+    </p>
+
+    <p>
+        <div>Email de l'employé :</div>
+        @Html.TextBoxFor(k => k.Email)
+    </p>
+</fieldset>
+
+<input type="submit" value="Envoyer" />
+}
