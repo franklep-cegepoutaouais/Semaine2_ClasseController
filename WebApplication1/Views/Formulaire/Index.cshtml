@@ -2,24 +2,24 @@
 @{
     ViewBag.Title = "Formulaire d'ajout de personnel";
 }
-@Html.BeginForm("Inscrire", "Formulaire", FormMethod.Post)
+@using (Html.BeginForm("Inscrire", "Formulaire", FormMethod.Post))
 {
-<fieldset>
-    <p>
-        <div>Nom de l'employé :</div>
-        @Html.TextBoxFor(k => k.Nom)
-    </p>
+    <fieldset>
+        <p>
+            <div>Nom de l'employé :</div>
+            @* INPUT À FAIRE *@
+        </p>
 
-    <p>
-        <div>Prénom de l'employé :</div>
-        @Html.TextBoxFor(k => k.Prenom)
-    </p>
+        <p>
+            <div>Prénom de l'employé :</div>
+            @* INPUT À FAIRE *@
+        </p>
 
-    <p>
-        <div>Email de l'employé :</div>
-        @Html.TextBoxFor(k => k.Email)
-    </p>
-</fieldset>
+        <p>
+            <div>Email de l'employé :</div>
+            @* INPUT À FAIRE *@
+        </p>
+    </fieldset>
 
-<input type="submit" value="Envoyer" />
+    <input type="submit" value="Envoyer" />
 }
