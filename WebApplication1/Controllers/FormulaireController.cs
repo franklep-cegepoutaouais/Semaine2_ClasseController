@@ -9,6 +9,10 @@ namespace WebApplication1.Controllers
 {
     public class FormulaireController : Controller
     {
+        /// <summary>
+        /// Voir le formulaire.
+        /// </summary>
+        /// [Il manque aussi quelque chose ici...]
         public ActionResult Index()
         {
             return View();
@@ -19,6 +23,7 @@ namespace WebApplication1.Controllers
         /// </summary>
         /// <param name="donneesFormulaire">Données provenant du formulaire.</param>
         /// <returns>Résultat d'action (Code HTTP).</returns>
+        /// [Il manque aussi quelque chose ici...]
         public ActionResult Inscrire(AjouterEmploye donneesFormulaire)
         {
             throw new NotImplementedException();
